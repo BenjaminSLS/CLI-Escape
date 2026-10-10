@@ -1,12 +1,18 @@
-# Import the dialog_options.py and locations.py files as modules.
-import sys, os, locations, dialog_options, keys
+# Import the dialog_options.py, locations.py, and key.py files as modules.
+import locations, dialog_options, keys
+# Import the OS module and refer to the exit() function from the sys module.
+import os
+from sys import exit
 
 def main(locations, dialog_options, keys):
     # The players location
     current_location = "bedroom"
 
     # Set locations to room.
-    rooms = locations.locations()
+    rooms = locations.location_text()
+
+    # Get picture for the room.
+    room_images = locations.location_images()
     
     # Pull dialog options.
     dialog = dialog_options.available_dialog()
@@ -60,12 +66,16 @@ def main(locations, dialog_options, keys):
         for door_num, room in enumerate(location_choices, start=1):
             print(f"{door_num}. {room.capitalize()}")
 
+        print("\nRoom Image")
+        for i in room_images[current_location]:
+            print(i)
+        
         # Have the user select the next location.
         choice = input("\nChoose your next location: ").lower()
         
         # Exit program if user types exit.
         if choice == "exit":
-            sys.exit()
+            exit()
         
         # Try converting the answer to an integer if need be and pass if it is not.
         try:
