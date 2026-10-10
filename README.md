@@ -27,20 +27,20 @@ Notes:
 
 2. The repository can be downloaded manually and be placed in any directory of your choice as long as all the files remain together.
 
-## How to Play
-1.
-  1. Move to the directory the game is saved in.
+## How to Start and Play the Game
+### Start the Game
+1. Move to the directory the game is saved in.
 
-  2. python game.py
+2. python game.py
 
-2.
-  1. During any dialog press enter to move forward.
+### Play the Game
+1. During any dialog press enter to move forward.
 
-  2.  Either the number next to or typing the name of a location can be used to move to it.
+2. Either the number next to or typing the name of a location can be used to move to it.
 
-  3. Typing 'exit' allows you to exit the game.
+3. Typing 'exit' allows you to exit the game.
 
-  4. Whether a piece of text is capitalized or not never matters within the game.
+4. Whether a piece of text is capitalized or not never matters within the game.
 
 ## License
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
