@@ -2,7 +2,7 @@
 def keys():
     return {
         "tub": "bronze",
-        "dining room": "silver",
+        "kitchen": "silver",
         "fence": "gold"
     }
 

@@ -5,7 +5,8 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 # Gameplay Example
-![Gameplay Screenshot](./screenshot.png)
+![Gameplay Screenshot 1](./images/image_01.png)
+![Gameplay Screenshot 2](./images/image_02.png)
 </div>
 
 ## Prerequisites
@@ -19,14 +20,13 @@ This application can only be run if you have Python installed or run it through 
 ```  
 mkdir ~/Code/escape/
 
-git clone https://github.com/BenjaminSLS/CLI-Escape
+git clone https://github.com/BenjaminSLS/CLI-Escape ~/Code/escape
 ```
 
 Notes:
-1. All steps can be done using the https://tangled.org/benjaminsls.tngl.sh/CLI-Escape repository as well.
+1. The  https://tangled.org/benjaminsls.tngl.sh/CLI-Escape includes identical files.
 
-2. The repository can be downloaded manually and be placed in any directory of your choice as long as all the files remain together.
-
+2. The repository can be downloaded manually and be placed in any directory of your choice as long as all of the files remain together.
 ## How to Start and Play the Game
 ### Start the Game
 1. Move to the directory the game is saved in.

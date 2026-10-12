@@ -45,7 +45,9 @@ def main(locations, dialog_options, keys):
             location_dialog = [game_key for game_key in dialog[current_location]]
 
             for talk in location_dialog:
-                input(talk)
+                next_line = input(talk + "\n")
+                if next_line.lower() == "exit":
+                    exit()
                 os.system(["clear", "cls"][os.name == "nt"])
                 
             if current_location == "front door" or current_location == "firewood":
@@ -86,26 +88,30 @@ def main(locations, dialog_options, keys):
             if 1 <= choice_number <= len(location_choices):
                 choice = location_choices[choice_number - 1]
             else:
-                print(f"{choice_number} is not an available location.\n")
-                input("Continue?: ")
+                prompt_again = input(f"{choice_number} is not an available location.\n")
+                if prompt_again.lower() == "exit":
+                    exit()
                 continue
         
         # Detect if a location is available to move to.
         if choice in location_choices:
             os.system(["clear", "cls"][os.name == "nt"])
             if choice in locked_doors and locked_doors[choice] not in inventory:
-                print(f"{choice} is locked.\n")
-                input("Continue?: ")
+                return_to_room = input(f"{choice} is locked.\n")
+                if return_to_room.lower() == "exit":
+                    exit()
             else:
                 if choice in key_locations and key_locations[choice] not in inventory:
                     new_key = key_locations[choice]
                     inventory.append(new_key)
-                    print(f"You found the {new_key} key!\n")
-                    input("Continue?: ")
+                    accept_key = input(f"You found the {new_key} key!\n")
+                    if accept_key.lower() == "exit":
+                        exit()
                 current_location = choice
         else:            
-            print(f"{choice} is not an availalbe location.")
-            input("Continue?: ")
+            prompt_again = input(f"{choice} is not an availalbe location.")
+            if prompt_again.lower() == "exit":
+                exit()
     
     # Ending statement.
     print("Thanks for playing my CLI adventure game!")
