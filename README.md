@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
-*A command line interface based escape game built with [Python](https://www.python.org/).*
+*A command-line, interface-based escape game built with [Python](https://www.python.org/).*
 
 ## Gameplay Example
 
@@ -33,7 +33,7 @@
 
 ## Project Structure
 
-```tree
+```text
 ├── game.py                  # Entry point; imports all necessary modules
 ├── gameplay_elements/       # Gameplay module directory
 │   ├── dialog_options.py    # Dialogue available and already played
@@ -53,7 +53,7 @@
 
 ### Applications and Software
 
-- **Python** - Python or through your operating system's package manager.
+- **Python** - Download from [python.org](https://www.python.org/) or via your OS package manager.
 - **Integrated Development Environment** - A good example would be [VSCodium](https://vscodium.com/), but anything will do as long as it can run Python programs.
 
 ## Installation
