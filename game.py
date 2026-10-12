@@ -1,9 +1,11 @@
 # Import the dialog_options.py, locations.py, and key.py files as modules.
-import locations, dialog_options, keys
+import gameplay_elements/locations, gameplay_elements/dialog_options.py, gameplay_elements/keys
+
 # Import the OS module and refer to the exit() function from the sys module.
 import os
 from sys import exit
 
+# CLI-Escape
 def main(locations, dialog_options, keys):
     # The players location
     current_location = "bedroom"
