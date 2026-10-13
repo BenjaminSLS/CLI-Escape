@@ -69,8 +69,7 @@ def main(locations, dialog_options, keys):
 
             # Print a winning message
             print("You escaped!\n")
-
-            user_prompt("\nExit?: ")
+            sys.exit()
 
         # Show user inventory once they collect the first item.
         if inventory:
