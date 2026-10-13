@@ -1,14 +1,14 @@
 # All lists/dictionaries and related.
 def keys():
     return {
-        "tub": "bronze",
-        "kitchen": "silver",
-        "fence": "gold"
+        "tub": "Bronze",
+        "kitchen": "Silver",
+        "fence": "Gold"
     }
 
 def locked_doors():
     return {
-        "hallway": "bronze",
-        "backyard": "silver",
-        "front door": "gold"
+        "hallway": "Bronze",
+        "backyard": "Silver",
+        "front door": "Gold"
     }

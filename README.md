@@ -34,7 +34,7 @@
 ## Project Structure
 
 ```text
-├── game.py                  # Entry point; imports all necessary modules
+├── cli_escape_game.py                  # Entry point; imports all necessary modules
 ├── gameplay_elements/       # Gameplay module directory
 │   ├── dialog_options.py    # Dialogue available and already played
 │   ├── keys.py              # Keys and where they reside
@@ -79,7 +79,7 @@ The repository can be downloaded manually and be placed in any directory of your
 ```bash
 cd ~/Code/escape/
 
-python3 game.py
+python3 cli_escape_game.py
 ```
 
 ### Play the Game
