@@ -83,7 +83,6 @@ def main(locations, dialog_options, keys):
 
         for door_num, room in enumerate(location_choices, start=1):
             print(f"{door_num}. {room.capitalize()}")
-        print()
         
         # Display the location image.
         for i in room_images[current_location]:

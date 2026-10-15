@@ -34,7 +34,7 @@
 ## Project Structure
 
 ```text
-├── cli_escape_game.py                  # Entry point; imports all necessary modules
+├── cli_escape_game.py       # Entry point; imports all necessary modules
 ├── gameplay_elements/       # Gameplay module directory
 │   ├── dialog_options.py    # Dialogue available and already played
 │   ├── keys.py              # Keys and where they reside
